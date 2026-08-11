@@ -2,58 +2,56 @@
 # 📘 Structure complète
 >Pour l’application **Excel**
 
-🧍‍♂️ Personnel
-Contient toutes les informations administratives du personnel :  
-- ID  
-- Nom  
-- Prénom  
-- Date de naissance  
-- Adresse  
-- Téléphone  
-- Email  
-- Poste  
-- Date d’entrée  
-- Statut  
-- Notes  
+### 🧍‍♂️ Personnel
+- Contient toutes les informations administratives du personnel
+   - ID  
+   - Nom  
+   - Prénom  
+   - Date de naissance  
+   - Adresse  
+   - Téléphone  
+   - Email  
+   - Poste  
+   - Date d’entrée  
+   - Statut  
+   - Notes  
 
-📄 Contrats
-Pour suivre les contrats de chaque membre :  
-- ID Personnel  
-- Type de contrat  
-- Date début  
-- Date fin  
-- Temps de travail  
-- Salaire  
-- Observations  
+### 📄 Contrats
+- Pour suivre les contrats de chaque membre
+   - ID Personnel  
+   - Type de contrat  
+   - Date début  
+   - Date fin  
+   - Temps de travail  
+   - Salaire  
+   - Observations  
 
-🕒 Présences
-Pour gérer les présences et absences :  
-- ID Personnel  
-- Date  
-- Présent (Oui/Non)  
-- Motif absence  
+### 🕒 Présences
+- Pour gérer les présences et absences
+   - ID Personnel  
+   - Date  
+   - Présent (Oui/Non)  
+   - Motif absence  
 
-🎓 Compétences
-Pour suivre les compétences et certifications :  
-- ID Personnel  
-- Compétence  
-- Niveau  
-- Certification  
-- Date obtention  
+### 🎓 Compétences
+- Pour suivre les compétences et certifications
+   - ID Personnel  
+   - Compétence  
+   - Niveau  
+   - Certification  
+   - Date obtention  
 
-🎒 Matériel attribué
-Pour gérer le matériel prêté :  
-- ID Personnel  
-- Matériel  
-- Numéro de série  
-- Date attribution  
-- Date restitution  
+### 🎒 Matériel attribué
+- Pour gérer le matériel prêté
+   - ID Personnel  
+   - Matériel  
+   - Numéro de série  
+   - Date attribution  
+   - Date restitution  
 
 ---
 
-📁 Dossiers nécessaires (si tu veux organiser un projet autour du fichier)
-
-Tu peux structurer ton projet comme ceci :
+📁 Dossiers nécessaires
 ```text
 AssociationPersonnel/
 │
@@ -76,5 +74,3 @@ AssociationPersonnel/
 └── config/
     └── settings.json
 ```
-
----
