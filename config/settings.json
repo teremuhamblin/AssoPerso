@@ -1,0 +1,6 @@
+{
+    "excel_file": "data/base_personnel_association.xlsx",
+    "backup_folder": "backups/",
+    "export_folder": "exports/",
+    "default_sheet": "Personnel"
+}
