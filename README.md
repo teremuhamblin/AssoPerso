@@ -53,7 +53,7 @@
 
 📁 Dossiers nécessaires
 ```text
-AssociationPersonnel/
+AssoPerso/
 │
 ├── base.md
 │
