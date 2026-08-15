@@ -1,0 +1,28 @@
+# ============================================
+#   TEMPLATE DE COMMIT — Projet AssoPerso
+# ============================================
+
+# Format recommandé :
+# type(scope): résumé court
+#
+# Types : feat, fix, docs, style, refactor, perf, test, chore, ci, build
+# Exemple :
+# feat(api): ajout endpoint membres
+
+type(scope): résumé court du commit
+
+# Description détaillée :
+# - Contexte de la modification
+# - Problème résolu / fonctionnalité ajoutée
+# - Impact sur le projet AssoPerso
+# - Points de vigilance / limitations
+
+# BREAKING CHANGE:
+# Décrire ici les changements majeurs + instructions de migration.
+
+# Issues liées :
+# Closes #ID
+# Relates #ID
+
+# Co-auteurs :
+# Co-authored-by: Nom <email@example.com>
