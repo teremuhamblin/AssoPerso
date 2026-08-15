@@ -1,0 +1,10 @@
+name: Question
+description: Poser une question sur AssoPerso
+labels: [question]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Ta question
+    validations:
+      required: true
