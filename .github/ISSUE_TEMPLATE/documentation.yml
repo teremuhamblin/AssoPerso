@@ -1,0 +1,16 @@
+name: Documentation
+description: Problème ou amélioration de documentation
+labels: [documentation]
+body:
+  - type: textarea
+    id: doc
+    attributes:
+      label: Zone concernée
+      placeholder: Page, fichier, section…
+    validations:
+      required: true
+
+  - type: textarea
+    id: change
+    attributes:
+      label: Proposition
