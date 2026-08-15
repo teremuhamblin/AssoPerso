@@ -1,0 +1,32 @@
+name: Bug Report
+description: Signaler un bug dans AssoPerso
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du bug
+      placeholder: Décris le problème rencontré
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes pour reproduire
+      placeholder: 1. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / erreurs
+      render: shell
