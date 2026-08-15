@@ -1,0 +1,50 @@
+# ============================
+#   .gitconfig — AssoPerso
+# ============================
+
+[user]
+    name = YOUR_NAME
+    email = YOUR_EMAIL@example.com
+    signingkey = # ID clé GPG (optionnel)
+
+[core]
+    editor = vim
+    autocrlf = input
+    fscache = true
+    excludesfile = ~/.gitignore_global
+
+[color]
+    ui = auto
+
+[alias]
+    st = status --short --branch
+    co = checkout
+    br = branch
+    ci = commit
+    lg = log --graph --decorate --pretty=format:'%C(yellow)%h%Creset %C(cyan)%ad%Creset %C(green)%an%Creset %C(bold blue)%d%Creset %s' --date=short
+    amend = commit --amend --no-edit
+    unstage = reset HEAD --
+    last = log -1 --stat
+    visual = !gitk --all &
+
+[pull]
+    rebase = false
+
+[push]
+    default = simple
+
+[credential]
+    helper = cache --timeout=3600
+
+[init]
+    defaultBranch = main
+
+[commit]
+    template = .gitedit
+
+[merge]
+    tool = vimdiff
+
+# Config spécifique au dossier AssoPerso
+[includeIf "gitdir:~/AssoPerso/"]
+    path = ~/.gitconfig-assoperso
