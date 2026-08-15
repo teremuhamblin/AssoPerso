@@ -1,11 +1,61 @@
-# Build and Release Folders
+########################################
+# --- SYSTEME / GLOBAL --- #
+########################################
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs & temporaires
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.old
+*.orig
+*~
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+########################################
+# --- ENVIRONNEMENTS / SECRETS --- #
+########################################
+
+# Environnements
+.env
+.env.*
+.venv/
+venv/
+ENV/
+env/
+
+# Secrets
+*.key
+*.pem
+*.crt
+*.p12
+secrets.json
+config.local.*
+credentials.*
+
+########################################
+# --- FLASH / AIR / MOBILE BUILD --- #
+########################################
+
+# Build & Release
 bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
-
-# Other files and folders
-.settings/
 
 # Executables
 *.swf
@@ -13,6 +63,110 @@ bin-release/
 *.ipa
 *.apk
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Flash Builder / Flex
+.settings/
+# IMPORTANT : ne pas ignorer .project / .actionScriptProperties / .flexProperties
+
+########################################
+# --- IDE / EDITORS --- #
+########################################
+
+# VSCode
+.vscode/
+.history/
+
+# JetBrains
+.idea/
+*.iml
+
+# Eclipse
+.metadata/
+.recommenders/
+
+########################################
+# --- WEB / FRONTEND --- #
+########################################
+
+# Cache navigateurs
+.cache/
+*.cache/
+*.map
+
+# Front-end tools
+bower_components/
+jspm_packages/
+.sass-cache/
+
+########################################
+# --- NODE / JAVASCRIPT --- #
+########################################
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build
+dist/
+build/
+.next/
+.nuxt/
+out/
+.parcel-cache/
+
+########################################
+# --- PYTHON --- #
+########################################
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+########################################
+# --- JAVA / JVM --- #
+########################################
+
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+########################################
+# --- C / C++ --- #
+########################################
+
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+
+########################################
+# --- MISC --- #
+########################################
+
+# Images générées
+*.svg.tmp
+*.png.tmp
+
+# Docker
+.docker/
+docker-compose.override.yml
