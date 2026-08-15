@@ -56,7 +56,22 @@
 AssoPerso/
 │
 ├── base.md
-│
+├── .github
+      ├── ISSUE_TEMPLATE/
+      ├── bug_report.yml
+      ├── feature_request.yml
+      ├── documentation.yml
+      └── question.yml
+├── PULL_REQUEST_TEMPLATE.md
+├── SECURITY.md
+├── SUPPORT.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── FUNDING.yml
+├── labels.yml
+├── config.yml
+│   └── workflows
+         └── ci.yml
 ├── docs/
 │   ├── README.md
 │   ├── Guide_utilisation.md
@@ -64,12 +79,10 @@ AssoPerso/
 │       ├── Fiche_personnel.pdf
 │       ├── Fiche_contrat.pdf
 │       └── Fiche_competence.pdf
-│
 ├── scripts/
 │   ├── import_csv.py
 │   ├── export_pdf.py
 │   └── backup_xlsx.py
-│
 └── config/
     └── settings.json
 ```
