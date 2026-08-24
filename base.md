@@ -9,18 +9,20 @@
 ⚙️ 1. Dépendances nécessaires
 Assurez-vous que Python est installé, puis installez les modules requis :
 
-`bash
+```bash
 pip install pandas openpyxl
-`
+```
 
 ---
 
 🛠️ 2. Script Python : create_base.py
 Ce script génère automatiquement un fichier Excel structuré, conforme aux besoins administratifs.
 
-`python
+```python
 import pandas as pd
+```
 
+```text
 ================================
 
 Définition des colonnes
@@ -77,44 +79,45 @@ with pd.ExcelWriter("base.xlsx", engine="openpyxl") as writer:
     dfmateriel.toexcel(writer, sheet_name="Materiel", index=False)
 
 print("Fichier base.xlsx créé avec succès.")
-`
+```
 
 ---
 
 ▶️ 3. Exécution
 Dans votre terminal :
 
-`bash
+```python
 python create_base.py
-`
+```
 
 ---
 
 📦 4. Résultat obtenu
 Le script génère automatiquement :
 
+```text
 📁 base.xlsx  
 Avec les onglets suivants :
-
 - Personnel — Informations administratives  
 - Contrats — Suivi contractuel  
 - Présences — Présences / absences  
 - Compétences — Compétences & certifications  
-- Matériel — Matériel attribué  
+- Matériel — Matériel attribué
+```
 
-Chaque onglet contient uniquement les colonnes définies, prêt à être rempli ou importé via vos scripts (importcsv.py, backupxlsx.py, etc.).
+> Chaque onglet contient uniquement les colonnes définies, prêt à être rempli ou importé via vos scripts (importcsv.py, backupxlsx.py, etc.).
 
 ---
 
 🧩 Bonus technique ajouté
 Pour un dépôt GitHub propre, ajoutez dans votre README principal :
 
-`text
+```text
 scripts/
 │── create_base.py        # Génération du fichier Excel
 │── import_csv.py         # Import automatisé depuis CSV
 │── export_pdf.py         # Export des fiches en PDF
 │── backup_xlsx.py        # Sauvegarde automatique
-`
+```
 
 ---
