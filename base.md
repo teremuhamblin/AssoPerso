@@ -1,25 +1,32 @@
-###### base.md >> markdown 
-> 👉 Méthode avec Python + pandas.
-- 📘 Création du fichier base.xlsx
+###### 📘 base.md >> markdown
+> Méthode Python + pandas
+- (Version technique améliorée)
 
-### 🛠️ Méthode complète
-- Création du fichier Excel **base.xlsx** avec 5 onglets
+> Génération automatisée du fichier base.xlsx contenant les 5 modules administratifs : Personnel, Contrats, Présences, Compétences, Matériel.
 
-#### 1. Installer les dépendances
->Assurez-vous d’avoir Python installé, puis installez pandas :
-```bash
+---
+
+⚙️ 1. Dépendances nécessaires
+Assurez-vous que Python est installé, puis installez les modules requis :
+
+`bash
 pip install pandas openpyxl
-```
+`
 
-#### 2. Créer un fichier Python : **create_base.py**
-Copiez le script suivant :
-```python
+---
+
+🛠️ 2. Script Python : create_base.py
+Ce script génère automatiquement un fichier Excel structuré, conforme aux besoins administratifs.
+
+`python
 import pandas as pd
-```
 
---- Définition des colonnes pour chaque onglet ---
+================================
 
-```text
+Définition des colonnes
+
+================================
+
 personnel_cols = [
     "ID", "Nom", "Prénom", "Date de naissance", "Adresse",
     "Téléphone", "Email", "Poste", "Date d’entrée", "Statut", "Notes"
@@ -44,7 +51,11 @@ materiel_cols = [
     "Date d'attribution", "Date de restitution"
 ]
 
---- Création des DataFrames vides ---
+================================
+
+Création des DataFrames vides
+
+================================
 
 dfpersonnel = pd.DataFrame(columns=personnelcols)
 dfcontrats = pd.DataFrame(columns=contratscols)
@@ -52,7 +63,11 @@ dfpresences = pd.DataFrame(columns=presencescols)
 dfcompetences = pd.DataFrame(columns=competencescols)
 dfmateriel = pd.DataFrame(columns=materielcols)
 
---- Écriture dans base.xlsx ---
+================================
+
+Écriture dans base.xlsx
+
+================================
 
 with pd.ExcelWriter("base.xlsx", engine="openpyxl") as writer:
     dfpersonnel.toexcel(writer, sheet_name="Personnel", index=False)
@@ -62,22 +77,44 @@ with pd.ExcelWriter("base.xlsx", engine="openpyxl") as writer:
     dfmateriel.toexcel(writer, sheet_name="Materiel", index=False)
 
 print("Fichier base.xlsx créé avec succès.")
-```
+`
 
-#### 3. Exécuter le script
-Dans le terminal :
-```bash
+---
+
+▶️ 3. Exécution
+Dans votre terminal :
+
+`bash
 python create_base.py
-```
+`
 
-#### 4. Résultat
-- Un fichier Excel nommé base.xlsx sera créé dans le dossier courant, contenant :
-   - Onglet Personnel
-   - Onglet Contrats
-   - Onglet Presences
-   - Onglet Competences
-   - Onglet Materiel
+---
 
->Chaque onglet contient uniquement les colonnes définies, prêt à être rempli.
+📦 4. Résultat obtenu
+Le script génère automatiquement :
+
+📁 base.xlsx  
+Avec les onglets suivants :
+
+- Personnel — Informations administratives  
+- Contrats — Suivi contractuel  
+- Présences — Présences / absences  
+- Compétences — Compétences & certifications  
+- Matériel — Matériel attribué  
+
+Chaque onglet contient uniquement les colonnes définies, prêt à être rempli ou importé via vos scripts (importcsv.py, backupxlsx.py, etc.).
+
+---
+
+🧩 Bonus technique ajouté
+Pour un dépôt GitHub propre, ajoutez dans votre README principal :
+
+`text
+scripts/
+│── create_base.py        # Génération du fichier Excel
+│── import_csv.py         # Import automatisé depuis CSV
+│── export_pdf.py         # Export des fiches en PDF
+│── backup_xlsx.py        # Sauvegarde automatique
+`
 
 ---
