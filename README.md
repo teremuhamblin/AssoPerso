@@ -1,5 +1,6 @@
 ###### README.md >> markdown 
-# 📘 Architecture Fonctionnelle
+# 📘 Architecture 
+- Fonctionnelle
 ### Technique de l’Application Excel
 > Système de gestion du personnel
 > Modèle structuré multi‑onglets
@@ -78,8 +79,7 @@ Gestion du matériel confié aux membres.
 
 📁 Arborescence Technique du Projet
 > Structure recommandée pour un dépôt GitHub complet, maintenable et industrialisé
-
-`text
+```text
 AssoPerso/
 │
 ├── base.md                     # Documentation principale
@@ -118,11 +118,11 @@ AssoPerso/
 │
 └── config/
     └── settings.json           # Paramètres applicatifs
-`
+```
 
 ---
 
-⚙️ Version README Optimisée — Points Techniques Ajoutés
+### ⚙️ Points Techniques Ajoutés
 - Normalisation des champs (ISO‑8601, clés primaires, relations inter‑modules).  
 - Séparation claire des couches fonctionnelles (Core / Tracking / Activity / Skills / Equipment).  
 - Arborescence GitHub professionnelle, conforme aux standards DevOps.  
