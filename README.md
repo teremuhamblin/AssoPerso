@@ -24,8 +24,9 @@
 
 ---
 
-📄 Module Contrats — Contractual Tracking Layer
-Assure le suivi des engagements contractuels individuels.
+### 📄 Module Contrats
+- Contractual Tracking Layer
+- Assure le suivi des engagements contractuels individuels.
 
 | Champ | Description |
 |-------|-------------|
@@ -39,8 +40,9 @@ Assure le suivi des engagements contractuels individuels.
 
 ---
 
-🕒 Module Présences — Attendance & Activity Layer
-Gestion opérationnelle des présences, absences et motifs.
+### 🕒 Module Présences
+- Attendance & Activity Layer
+- Gestion opérationnelle des présences, absences et motifs.
 
 | Champ | Description |
 |-------|-------------|
@@ -51,8 +53,9 @@ Gestion opérationnelle des présences, absences et motifs.
 
 ---
 
-🎓 Module Compétences — Skills & Certification Layer
-Suivi des compétences, niveaux et certifications.
+### 🎓 Module Compétences
+- Skills & Certification Layer
+- Suivi des compétences, niveaux et certifications.
 
 | Champ | Description |
 |-------|-------------|
@@ -64,8 +67,9 @@ Suivi des compétences, niveaux et certifications.
 
 ---
 
-🎒 Module Matériel attribué — Equipment Allocation Layer
-Gestion du matériel confié aux membres.
+### 🎒 Module Matériel attribué
+- Equipment Allocation Layer
+- Gestion du matériel confié aux membres.
 
 | Champ | Description |
 |-------|-------------|
@@ -77,8 +81,9 @@ Gestion du matériel confié aux membres.
 
 ---
 
-📁 Arborescence Technique du Projet
-> Structure recommandée pour un dépôt GitHub complet, maintenable et industrialisé
+### 📁 Arborescence
+- Technique du Projet
+> Structure recommandée pour un dépôt GitHub complet, maintenable et industrialisé :
 ```text
 AssoPerso/
 │
@@ -122,7 +127,8 @@ AssoPerso/
 
 ---
 
-### ⚙️ Points Techniques Ajoutés
+### ⚙️ Points Techniques
+>Ajoutés
 - Normalisation des champs (ISO‑8601, clés primaires, relations inter‑modules).  
 - Séparation claire des couches fonctionnelles (Core / Tracking / Activity / Skills / Equipment).  
 - Arborescence GitHub professionnelle, conforme aux standards DevOps.  
